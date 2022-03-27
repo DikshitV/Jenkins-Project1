@@ -17,6 +17,7 @@ pipeline
       steps
       {
         echo 'Test App'
+        sh "mvn test"
       }
     }
      stage('Deploy')
