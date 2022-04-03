@@ -18,6 +18,10 @@ pipeline
     }
      stage('Test')
     {
+      agent 
+      {
+        label "Test_node"
+      }
       steps
       {
         echo 'Test App'
