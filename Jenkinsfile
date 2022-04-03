@@ -14,6 +14,7 @@ pipeline
         echo 'Build App'
           sh "mvn clean"
           sh "mvn compile"
+        
       }
     }
      stage('Test')
