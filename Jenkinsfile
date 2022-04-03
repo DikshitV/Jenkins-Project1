@@ -5,6 +5,10 @@ pipeline
   {
     stage('Build')
     {
+      agent 
+      {
+        label "build_server"
+      }
       steps
       {
         echo 'Build App'
